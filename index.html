@@ -11,58 +11,46 @@
     box-sizing: border-box;
 }
 body {
-    font-family: "Microsoft YaHei", Arial, sans-serif;
-    line-height: 1.8;
-    color: #333;
-    background-color: #f9f9f9;
+    font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    line-height: 1.85;
+    color: #444;
+    background-color: #f7f9f8;
     padding: 20px;
 }
 .article-container {
     max-width: 800px;
     margin: 0 auto;
     background: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    padding: 40px 35px;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.04);
 }
 
-/* ========== 主标题 美化 ========== */
+/* 主标题优化排版 */
 .article-title {
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 500;
     text-align: center;
     margin: 10px 0 25px;
-    color: #2c3e50;
-    line-height: 1.6;
+    color: #2d3a45;
+    line-height: 1.4;
     letter-spacing: 2px;
-    position: relative;
-    padding-bottom: 15px;
 }
 .article-title small {
     display: block;
-    font-size: 20px;
-    font-weight: 500;
-    color: #42b983;
-    margin: 8px 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+    margin: 6px 0;
+    letter-spacing: 1px;
 }
 .article-title span {
     display: block;
-    font-size: 17px;
-    font-weight: normal;
-    color: #666;
-    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #5068a9;
+    margin-top: 8px;
     letter-spacing: 1px;
-}
-.article-title::after {
-    content: "";
-    width: 80px;
-    height: 3px;
-    background-color: #42b983;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 3px;
 }
 
 .publish-info {
@@ -70,42 +58,46 @@ body {
     color: #999;
     font-size: 14px;
     margin-bottom: 30px;
+    font-weight: 300;
 }
 .intro {
     font-size: 16px;
     color: #555;
     margin-bottom: 30px;
     text-indent: 2em;
+    font-weight: 400;
 }
 
-/* ========== 章节大标题 美化 ========== */
+/* 章节标题 */
 .chapter-title {
-    font-size: 22px;
-    font-weight: bold;
-    margin: 35px 0 20px;
-    color: #2c3e50;
-    border-left: 5px solid #42b983;
-    padding: 8px 15px;
-    background-color: #f8fff9;
-    border-radius: 0 4px 4px 0;
-    letter-spacing: 0.5px;
+    font-size: 23px;
+    font-weight: 500;
+    margin: 38px 0 20px;
+    color: #2d3a45;
+    border-left: 5px solid #38a774;
+    padding: 10px 16px;
+    background-color: #f9fff9;
+    border-radius: 0 6px 6px 0;
+    letter-spacing: 1px;
 }
 
-/* ========== 小节标题 美化 ========== */
+/* 小节标题 */
 .section-title {
     font-size: 19px;
-    font-weight: bold;
-    margin: 25px 0 12px;
-    color: #34495e;
-    padding-left: 8px;
+    font-weight: 500;
+    margin: 26px 0 12px;
+    color: #3b4b5a;
+    padding-left: 10px;
     border-left: 3px solid #d1e7dd;
+    letter-spacing: 0.5px;
 }
 
 .paragraph {
     font-size: 16px;
     color: #444;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     text-indent: 2em;
+    font-weight: 400;
 }
 .list {
     margin: 15px 0;
@@ -115,26 +107,28 @@ body {
     margin-bottom: 10px;
     font-size: 16px;
     color: #444;
+    font-weight: 400;
 }
 .emphasis {
-    font-weight: bold;
-    color: #42b983;
+    font-weight: 500;
+    color: #38a774;
 }
 .conclusion {
     margin-top: 40px;
-    padding-top: 20px;
+    padding-top: 25px;
     border-top: 1px solid #eee;
     font-size: 16px;
-    color: #333;
+    color: #444;
     text-indent: 2em;
+    font-weight: 400;
 }
 .art-img {
     width: 100%;
     max-width: 600px;
     height: 480px;
     object-fit: cover;
-    border-radius: 6px;
-    margin: 20px auto;
+    border-radius: 8px;
+    margin: 22px auto;
     display: block;
 }
 .copyright {
@@ -144,6 +138,7 @@ body {
     font-size: 14px;
     color: #888;
     padding-right: 10px;
+    font-weight: 300;
 }
     </style>
 </head>
@@ -151,7 +146,7 @@ body {
     <div class="article-container">
         <h1 class="article-title">
             求职季心灵急救指南
-            <small>你的抗压能力，远比你想象的更强大</small>
+            <small>你的抗压能力，远比你想象的更强大!</small>
             <span>你见到了社会的厉害了吧？不！我见到自己的厉害啦！</span>
         </h1>
         <div class="publish-info">2026年5月25日</div>
@@ -159,7 +154,7 @@ body {
         <img class="art-img" src="1.jpg" alt="自我成长励志配图">
 
         <div class="intro">
-            最近，网络上这样一段对话悄然走红：“这下，你见识到社会的厉害了吧？”“不！我见识到自己的厉害啦！”极具反差意味的对话，戳中了无数人的心声。初入社会，人们受挫的时候，往往会黯然感慨一句世道难行。但是一句响亮的“我见识到自己的厉害啦”狠狠击破了我们的固有认知。从责怪社会有多么复杂到看清自己在前行路上跨越了多少坎坷，在这个新时代我们又迎来了一次思想觉醒。
+            最近，网络上这样一段对话悄然走红：“这下，你见识到社会的厉害了吧？”“不！我见识到自己的厉害啦！”极具反差意味的对话，戳中了无数人的心声。初入社会，人们受挫的时候，往往会黯然感慨一句世道难行。但是一句响亮的“我见识到自己的厉害啦”狠狠击破了我们的固有认知。从责怪社会多么复杂到看清自己在前行路上跨越了多少坎坷，在这个新时代我们又迎来了一次思想觉醒。
         </div>
 
         <h2 class="chapter-title">01 学会自我调节</h2>
