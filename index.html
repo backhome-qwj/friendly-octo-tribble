@@ -3,111 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>求职季心灵急救指南 | 你的抗压能力，远比你想象的更强大</title>
+    <title>求职季心灵急救指南</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: "Microsoft YaHei", Arial, sans-serif;
-            line-height: 1.8;
-            color: #333;
-            background-color: #f9f9f9;
-            padding: 20px;
-        }
-        .article-container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.05);
-        }
-        .article-title {
-            font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 20px;
-            color: #222;
-        }
-        .publish-info {
-            text-align: center;
-            color: #999;
-            font-size: 14px;
-            margin-bottom: 30px;
-        }
-        .intro {
-            font-size: 16px;
-            color: #555;
-            margin-bottom: 30px;
-            text-indent: 2em;
-        }
-        .chapter-title {
-            font-size: 20px;
-            font-weight: bold;
-            margin: 25px 0 15px;
-            color: #222;
-            border-left: 4px solid #42b983;
-            padding-left: 10px;
-        }
-        .section-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin: 20px 0 10px;
-            color: #333;
-        }
-        .paragraph {
-            font-size: 16px;
-            color: #444;
-            margin-bottom: 15px;
-            text-indent: 2em;
-        }
-        .list {
-            margin: 15px 0;
-            padding-left: 40px;
-        }
-        .list li {
-            margin-bottom: 10px;
-            font-size: 16px;
-            color: #444;
-        }
-        .emphasis {
-            font-weight: bold;
-            color: #42b983;
-        }
-        .conclusion {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            font-size: 16px;
-            color: #333;
-            text-indent: 2em;
-        }
-        .art-img {
-            width: 100%;
-            max-width: 600px;
-            height: 480px;
-            object-fit: cover;
-            border-radius: 6px;
-            margin: 20px auto;
-            display: block;
-        }
-        .copyright {
-            max-width: 800px;
-            margin: 15px auto 0;
-            text-align: right;
-            font-size: 14px;
-            color: #888;
-            padding-right: 10px;
-        }
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+.article-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* ========== 主标题 美化 ========== */
+.article-title {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0 25px;
+    color: #2c3e50;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 15px;
+}
+.article-title small {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    color: #42b983;
+    margin: 8px 0;
+}
+.article-title span {
+    display: block;
+    font-size: 17px;
+    font-weight: normal;
+    color: #666;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+.article-title::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: #42b983;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+}
+
+.publish-info {
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.intro {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+    text-indent: 2em;
+}
+
+/* ========== 章节大标题 美化 ========== */
+.chapter-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 35px 0 20px;
+    color: #2c3e50;
+    border-left: 5px solid #42b983;
+    padding: 8px 15px;
+    background-color: #f8fff9;
+    border-radius: 0 4px 4px 0;
+    letter-spacing: 0.5px;
+}
+
+/* ========== 小节标题 美化 ========== */
+.section-title {
+    font-size: 19px;
+    font-weight: bold;
+    margin: 25px 0 12px;
+    color: #34495e;
+    padding-left: 8px;
+    border-left: 3px solid #d1e7dd;
+}
+
+.paragraph {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 15px;
+    text-indent: 2em;
+}
+.list {
+    margin: 15px 0;
+    padding-left: 40px;
+}
+.list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #444;
+}
+.emphasis {
+    font-weight: bold;
+    color: #42b983;
+}
+.conclusion {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 16px;
+    color: #333;
+    text-indent: 2em;
+}
+.art-img {
+    width: 100%;
+    max-width: 600px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 20px auto;
+    display: block;
+}
+.copyright {
+    max-width: 800px;
+    margin: 15px auto 0;
+    text-align: right;
+    font-size: 14px;
+    color: #888;
+    padding-right: 10px;
+}
     </style>
 </head>
 <body>
     <div class="article-container">
-        <h1 class="article-title">求职季心灵急救指南 | 你的抗压能力，远比你想象的更强大</h1>
-        <div class="publish-info">2026年5月22日 12:00</div>
+        <h1 class="article-title">
+            求职季心灵急救指南
+            <small>你的抗压能力，远比你想象的更强大</small>
+            <span>你见到了社会的厉害了吧？不！我见到自己的厉害啦！</span>
+        </h1>
+        <div class="publish-info">2026年5月25日</div>
 
         <img class="art-img" src="1.jpg" alt="自我成长励志配图">
 
